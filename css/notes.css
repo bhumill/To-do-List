@@ -1,0 +1,100 @@
+.notes-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.notes-header {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    height: 240px;
+    background: #a89b8c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notes-description {
+    margin: 280px auto 10px auto;
+    width: 80%;
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    margin: 40px 0;
+    color: grey;
+}
+
+.write-note {
+    width: 100%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.write-note textarea {
+    width: 50%;
+    font-size: 16px;
+    background: none;
+    padding: 20px 24px;
+    color: white;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.notes-op {
+    width: 50%;
+    margin: 40px auto 80px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    border: none;
+    text-transform: uppercase;
+}
+
+button:focus {
+    outline: none;
+}
+
+.save-note {
+    background: lightslategray;
+}
+
+.edit-note {
+    background: grey;
+}
+
+.delete-note {
+    background: lightcoral;
+}
+
+.remove-last-note {
+    background: rebeccapurple;
+}
+
+@media (max-width: 900px) {
+    .notes-list li {
+        width: 100%;
+    }
+}
+
+.notes-list {
+    width: 56%;
+    margin: 0px auto;
+}
+
+.notes-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.notes-list ul li {
+    width: 100%;
+    margin: 20px 0;
+    background: #1f1e1e;
+    padding: 20px;
+}

@@ -1,0 +1,176 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Arial";
+    background: #242424;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+p,
+a {
+    font-size: 18px;
+    font-weight: lighter;
+    color: white;
+}
+
+p {
+    line-height: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff !important;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 22px 32px;
+    background: #47edd7;
+    color: #fff !important;
+    letter-spacing: 4px;
+}
+
+/* menu */
+
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+}
+
+.logo,
+.menu-open {
+    position: fixed;
+    line-height: 80px;
+    z-index: 2;
+    text-transform: uppercase;
+}
+
+.logo {
+    left: 40px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.menu-open {
+    right: 40px;
+    color: rgba(255, 255, 255, 0.4) !important;
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    z-index: 2;
+    left: -100%;
+}
+
+.menu-close {
+    position: absolute;
+    line-height: 80px;
+    right: 40px;
+    color: rgba(255, 255, 255, 0.6) !important;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.menu ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu ul li {
+    padding: 20px 0;
+}
+
+.menu ul li a {
+    font-size: 48px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background: none !important;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    text-decoration: none;
+    color: #d1603d !important;
+}
+
+.home-header {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.home-title {
+    font-size: 84px;
+    margin: 100px auto;
+}
+
+.home-title span {
+    color: #47edd7;
+}
+
+.home-tools {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.block {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    margin: 20px 0;
+}
+
+.block-1 {
+    background: #d1603d;
+}
+
+.block-2 {
+    background: #a89b8c;
+}
+
+.block-3 {
+    background: #f3a712;
+}
+
+@media (max-width: 900px) {
+    .home-title {
+        font-size: 38px;
+    }
+
+    .menu ul li a {
+        font-size: 24px;
+    }
+}

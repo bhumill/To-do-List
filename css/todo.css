@@ -1,0 +1,115 @@
+.todo-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.todo-header {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    height: 240px;
+    background: #d1603d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-description {
+    margin: 280px auto 10px auto;
+    width: 80%;
+    text-align: center;
+}
+
+.todo-add-task-wrapper {
+    margin: 60px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-add-task-wrapper input {
+    width: 40%;
+    font-size: 16px;
+    background: none;
+    padding: 20px 24px;
+    color: white;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.todo-add-task-wrapper ::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 12px;
+}
+
+.add-task-btn {
+    margin-left: 10px;
+    border: none;
+    text-transform: uppercase;
+    background: #d1603d;
+}
+
+button:focus {
+    outline: none;
+}
+
+.add:hover {
+    opacity: 0.7;
+}
+
+.task-list-wrapper {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.added-task {
+    width: 49%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.6rem;
+    background: #1f1e1e;
+}
+
+.added-task-input {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    color: white;
+    width: 80%;
+}
+
+.task-edit {
+    background: none;
+    outline: none;
+    border: none;
+    color: #47edd7;
+    font-size: 14px;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.task-remove {
+    background: none;
+    outline: none;
+    border: none;
+    color: #e83e3e;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .added-task {
+        width: 66%;
+    }
+}

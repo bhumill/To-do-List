@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Get your TODOs right! | DayByDay</title>
+
+        <!-- google fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/todo.css" />
+
+        <!-- jquery  -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+        <!-- greensock -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="todo-wrapper">
+                <div class="todo-header">
+                    <h1>Get your TODOs right!</h1>
+                </div>
+                <div class="todo-description">
+                    <p>
+                        We have made a small app to save your TODOs! You can add tasks, edit or
+                        remove them at any time you want. This helps you to organize your day and
+                        your work so you get things done and plan your schedule.
+                    </p>
+                </div>
+                <div class="todo-add-task-wrapper">
+                    <input type="text" class="todo-add-task" placeholder="Add task" />
+                    <button class="add-task-btn btn">Add</button>
+                </div>
+                <div class="task-list-wrapper"></div>
+            </div>
+
+            <!-- navigation -->
+            <div class="nav">
+                <div class="logo">
+                    <a href="index.html">daybyday</a>
+                </div>
+                <div class="menu-open">
+                    Menu
+                </div>
+                <div class="menu">
+                    <div class="menu-close">
+                        Close
+                    </div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="todo.html">Get your TODOs right</a></li>
+                        <li><a href="notes.html">Save your notes</a></li>
+                        <li><a href="quotes.html">Get a bit motivated</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+        <script src="js/todo.js"></script>
+    </body>
+</html>

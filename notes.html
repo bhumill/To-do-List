@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Notes | DayByDay</title>
+
+        <!-- google fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- common stylesheet -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/notes.css" />
+
+        <!-- jquery  -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+        <!-- greensock -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="notes-wrapper">
+                <div class="notes-header">
+                    <h1>Save your notes!</h1>
+                </div>
+                <div class="notes-description">
+                    <p>
+                        This is the another tool that we have created to increase your productivity. This tool can help you to save your notes, any important information very quickly. You can edit or remove them at any time you want.
+                    </p>
+                    <p>In order to edit or delete the note, select it first from the archieves, and then perform the operation.</p>
+                </div>
+                <div class="notes-wrapper-wrap">
+                    <div class="write-note">
+                        <textarea id="noteBox" rows="8" placeholder="What is on your mind?"></textarea>
+                    </div>
+                    <div class="notes-op">
+                    <button id="saveNote" class="btn save-note">Save Note</button>
+                    <button onclick="editNotesLI()" class="btn edit-note">Edit</button>
+                    <button onclick="removeNotesLI()" class="btn delete-note">Delete</button>
+                    <button id="removeNote" class="btn remove-last-note">Remove Last Item</button>  
+                    </div>
+                    <div class="subtitle">
+                        <h2>Archieves</h2>
+                    </div>
+                    <div class="notes-list">
+                        <ul>
+                            
+                        </ul>
+                    </div> 
+                </div>          
+        </div>
+        <div class="nav">
+            <div class="logo">
+                <a href="index.html">daybyday</a>
+            </div>
+            <div class="menu-open">
+                Menu
+            </div>
+            <div class="menu">
+                <div class="menu-close">
+                    Close
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="todo.html">Get your TODOs right</a></li>
+                    <li><a href="notes.html">Save your notes</a></li>
+                    <li><a href="quotes.html">Get a bit motivated</a></li>
+                </ul>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+        <script src="js/notes.js"></script>
+    </body>
+</html>
